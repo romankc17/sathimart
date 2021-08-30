@@ -18,3 +18,10 @@ class ProductTag(models.Model):
     
     def __str__(self):
         return self.tag + " - " + self.product.name
+    
+class ProductCategory(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE,related_name='categories',null=True,blank=True)  
+    category = models.CharField(max_length=20)
+    
+    def __str__(self):
+        return self.category + " - " + self.product.name
