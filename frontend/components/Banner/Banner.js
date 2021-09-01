@@ -10,11 +10,11 @@ function Banner() {
         showStatus={false}
         showIndicators={false}
         showThumbs={false}
-        interval={5000000}
+        interval={5000}
       >
-        <div className="h-80">
+        <div className="h-90">
           <img
-            className="object-contain h-full"
+            className=" h-full"
             loading="lazy"
             src="banner/sathimart.jpeg"
             alt=""
@@ -25,7 +25,7 @@ function Banner() {
           <img
             className="object-contain h-full"
             loading="lazy"
-            src="banner/welcomesathi.jpeg"
+            src="banner/foodanddrinks.jpeg"
             alt=""
           />
         </div>
@@ -34,7 +34,7 @@ function Banner() {
           <img
             className="object-contain h-full"
             loading="lazy"
-            src="banner/food.jpeg"
+            src="banner/bakery.jpeg"
             alt=""
           />
         </div>
@@ -43,7 +43,7 @@ function Banner() {
           <img
             className="object-contain h-full"
             loading="lazy"
-            src="banner/freedelivery.jpeg"
+            src="banner/fruits.jpeg"
             alt=""
           />
         </div>

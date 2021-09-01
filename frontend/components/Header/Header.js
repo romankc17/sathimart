@@ -9,7 +9,7 @@ import {
 
 function Header() {
   return (
-    <div>
+    <div className="top-0 z-50 sticky bg-white">
       {/* Web view */}
       <div className="hidden md:grid">
         <div className="p-4 flex items-center shadow-md space-x-5 cursor-pointer">
@@ -30,7 +30,7 @@ function Header() {
           </div>
 
           {/* input field */}
-          <div className="flex items-center flex-grow border rounded-lg h-12 focus-within:shadow-md">
+          <div className="flex items-center flex-grow border-2 rounded-lg h-12 focus-within:shadow-md">
             <input
               className="pl-5 bg-transparent outline-none flex-grow text-sm text-gray-600 placeholder-gray-400"
               placeholder="What are you looking for?"
@@ -51,6 +51,7 @@ function Header() {
             <div className="bg-gray-200 rounded-full">
               <UserIcon className="md:h-6 m-2" />
             </div>
+            <p className="text-gray-800 cursor-pointer">Sizan Rana</p>
           </div>
         </div>
       </div>
