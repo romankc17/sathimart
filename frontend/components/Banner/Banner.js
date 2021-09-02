@@ -1,9 +1,25 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+const imageSrc = [
+  {
+    src: "banner/sathimart.jpeg",
+  },
+  {
+    src: "banner/foodanddrinks.jpeg",
+  },
+  {
+    src: "banner/bakery.jpeg",
+  },
+  {
+    src: "banner/fruits.jpeg",
+  },
+];
+
 function Banner() {
   return (
     <div className="relative">
+      {/* <div className="absolute w-full h-32 bg-gradient-to-t from-gray-100 to-transparent bottom-0 z-20" /> */}
       <Carousel
         autoPlay
         infiniteLoop
@@ -12,41 +28,11 @@ function Banner() {
         showThumbs={false}
         interval={5000}
       >
-        <div className="h-90">
-          <img
-            className=" h-full"
-            loading="lazy"
-            src="banner/sathimart.jpeg"
-            alt=""
-          />
-        </div>
-
-        <div>
-          <img
-            className="object-contain h-full"
-            loading="lazy"
-            src="banner/foodanddrinks.jpeg"
-            alt=""
-          />
-        </div>
-
-        <div>
-          <img
-            className="object-contain h-full"
-            loading="lazy"
-            src="banner/bakery.jpeg"
-            alt=""
-          />
-        </div>
-
-        <div>
-          <img
-            className="object-contain h-full"
-            loading="lazy"
-            src="banner/fruits.jpeg"
-            alt=""
-          />
-        </div>
+        {imageSrc.map((img) => (
+          <div className="mt-2">
+            <img className="rounded-xl" src={img.src} loading="lazy" alt="" />
+          </div>
+        ))}
       </Carousel>
     </div>
   );

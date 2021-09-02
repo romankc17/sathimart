@@ -30,7 +30,7 @@ function Header() {
           </div>
 
           {/* input field */}
-          <div className="flex items-center flex-grow border-2 rounded-lg h-12 focus-within:shadow-md">
+          <div className="flex items-center flex-grow border border-gray-500 rounded-lg h-12 focus-within:shadow-lg">
             <input
               className="pl-5 bg-transparent outline-none flex-grow text-sm text-gray-600 placeholder-gray-400"
               placeholder="What are you looking for?"
@@ -46,8 +46,15 @@ function Header() {
 
           {/* heading right */}
           <div className="flex items-center space-x-3">
-            <HeartIcon className=" md:h-6" />
-            <ShoppingCartIcon className="md:h-6" />
+            {/* <div className="flex flex-col items-center"> */}
+            <HeartIcon className="md:h-6 hover:animate-bounce" />
+            {/* <p className="text-xs font-semibold">Favourates</p>
+            </div> */}
+            {/* <div className="flex flex-col items-center"> */}
+            <ShoppingCartIcon className="md:h-6 hover:animate-bounce" />
+            {/* <p className="text-xs font-semibold">Cart</p>
+            </div> */}
+
             <div className="bg-gray-200 rounded-full">
               <UserIcon className="md:h-6 m-2" />
             </div>

@@ -6,11 +6,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      colors: { primary: "#F37021" },
+      colors: { primary: "#F37021", secondary: "#F0A050" },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [require("tailwind-scrollbar-hide")],
+  plugins: [require("tailwind-scrollbar-hide", "@tailwindcss/line-clamp")],
 };
