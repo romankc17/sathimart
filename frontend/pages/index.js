@@ -23,7 +23,12 @@ export default function Home() {
         <Categories />
 
         <TodaysDeal />
-        <Poster image="/Posters/sathimartPoster.jpeg" />
+        <Poster
+          image="/Posters/newsathimart.jpeg"
+          title="New Sathi Mart"
+          description="Lakhanchowak Bhairahawa"
+          buttonText="Shop Now"
+        />
       </main>
     </div>
   );
